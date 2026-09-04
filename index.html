@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glammé - Beauty Salon & Spa | More Than A Salon, A Feeling</title>
+  <meta name="description" content="Glammé Beauty Salon & Spa offers expert hair care, glowing skin treatments, bridal makeover, luxury nail art, and relaxing spa sessions in Mangalore.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- SVG Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span><i data-feather="phone"></i> +91 98765 43210</span>
+        <span><i data-feather="map-pin"></i> MG Road, Mangalore, KA</span>
+        <span><i data-feather="clock"></i> Mon - Sun: 10:00 AM - 8:00 PM</span>
+      </div>
+      <div class="top-bar-social">
+        <span>Follow us @glamme_salon</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header Navbar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" data-view="home">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.5 8.4C8 18 10 16 12 16s4 2 5.5 4.4c2.7-1.8 4.5-4.9 4.5-8.4 0-5.5-4.5-10-10-10z"></path>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Glammé</span>
+          <span class="brand-sub">BEAUTY SALON & SPA</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-view="home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-view="services">Services</a></li>
+        <li><a href="#about" class="nav-link" data-view="about">About</a></li>
+        <li><a href="#gallery" class="nav-link" data-view="gallery">Gallery</a></li>
+        <li><a href="#packages" class="nav-link" data-view="packages">Packages</a></li>
+        <li><a href="#blog" class="nav-link" data-view="blog">Blog</a></li>
+        <li><a href="#contact" class="nav-link" data-view="contact">Contact</a></li>
+      </ul>
+
+      <button class="btn-pill" id="header-book-btn" data-view="booking">
+        Book Appointment
+      </button>
+
+      <div class="mobile-toggle" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP ROUTER -->
+  <main id="app-router">
+
+    <!-- PAGE VIEW 1: HOME PAGE -->
+    <section id="page-home" class="page-view active">
+      
+      <!-- Seamless Hero Banner matching reference screenshot -->
+      <div class="hero-section-seamless">
+        
+        <!-- Background Model Shoot Blended Smoothly on the Right -->
+        <div class="hero-bg-container">
+          <div class="hero-bg-img-wrapper">
+            <img src="assets/images/hero_model.png" alt="Glammé Model Shoot">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="hero-content-wrapper">
+            
+            <div class="hero-subhead">
+              BEAUTY • CARE • CONFIDENCE
+            </div>
+
+            <h1 class="hero-main-title">
+              More Than<br>
+              A Salon,<br>
+              <span class="italic-text">A Feeling</span>
+            </h1>
+
+            <p class="hero-subtext">
+              Expert care. Premium products. A more glamorous you.
+            </p>
+
+            <div class="hero-action-group">
+              <button class="btn-pill" data-view="booking" style="font-size: 1rem; padding: 14px 32px;">
+                Book Your Look <i data-feather="arrow-right"></i>
+              </button>
+
+              <div class="watch-story-btn" id="watch-story-btn">
+                <div class="play-circle">
+                  <i data-feather="play" style="fill: currentColor; width: 18px; height: 18px;"></i>
+                </div>
+                <div class="watch-text">
+                  <span>Watch</span>
+                  <span>Our Story</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom 4 Feature Icons Row -->
+            <div class="hero-features-bar">
+              <div class="feature-box">
+                <i data-feather="user-check"></i>
+                <div class="feature-label">
+                  <strong>Professional</strong>
+                  Stylists
+                </div>
+              </div>
+
+              <div class="feature-box">
+                <i data-feather="droplet"></i>
+                <div class="feature-label">
+                  <strong>Premium</strong>
+                  Products
+                </div>
+              </div>
+
+              <div class="feature-box">
+                <i data-feather="shield"></i>
+                <div class="feature-label">
+                  <strong>Hygienic</strong>
+                  & Safe
+                </div>
+              </div>
+
+              <div class="feature-box">
+                <i data-feather="heart"></i>
+                <div class="feature-label">
+                  <strong>Personalized</strong>
+                  Care
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Overview Section -->
+      <div class="services-section">
+        <div class="container">
+          
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+            <div>
+              <span class="section-tag">OUR SERVICES</span>
+              <h2 class="section-title">Beauty for Every You</h2>
+              <p class="section-subtitle">From everyday care to special occasions, we offer a wide range of beauty and wellness services tailored just for you.</p>
+            </div>
+            <button class="btn-pill" style="background: transparent; border: 1.5px solid #1b0e10; color: #1b0e10; box-shadow: none;" data-view="services">
+              View All Services +
+            </button>
+          </div>
+
+          <!-- Services Grid Cards -->
+          <div class="services-grid">
+            
+            <div class="service-card" data-view="services">
+              <div class="service-card-img">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Hair Care">
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Hair Care</h3>
+                <p class="service-card-desc">Style your story</p>
+                <span class="arrow-circle-btn"><i data-feather="arrow-right"></i></span>
+              </div>
+            </div>
+
+            <div class="service-card" data-view="services">
+              <div class="service-card-img">
+                <img src="assets/images/facial_spa.png" alt="Skin Care">
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Skin Care</h3>
+                <p class="service-card-desc">Glow naturally</p>
+                <span class="arrow-circle-btn"><i data-feather="arrow-right"></i></span>
+              </div>
+            </div>
+
+            <div class="service-card" data-view="services">
+              <div class="service-card-img">
+                <img src="assets/images/bridal_makeup.png" alt="Bridal Makeover">
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Bridal Makeover</h3>
+                <p class="service-card-desc">For your big day</p>
+                <span class="arrow-circle-btn"><i data-feather="arrow-right"></i></span>
+              </div>
+            </div>
+
+            <div class="service-card" data-view="services">
+              <div class="service-card-img">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Nail Art">
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Nail Art</h3>
+                <p class="service-card-desc">Small details, big style</p>
+                <span class="arrow-circle-btn"><i data-feather="arrow-right"></i></span>
+              </div>
+            </div>
+
+            <div class="service-card" data-view="services">
+              <div class="service-card-img">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Spa & Wellness">
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Spa & Wellness</h3>
+                <p class="service-card-desc">Relax. Rejuvenate. Repeat.</p>
+                <span class="arrow-circle-btn"><i data-feather="arrow-right"></i></span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Promotional Callout Banners -->
+          <div class="promo-grid">
+            <div class="promo-card-1">
+              <div>
+                <h3>Because You Deserve the Best</h3>
+                <button class="btn-pill" data-view="booking">
+                  Book Appointment <i data-feather="arrow-right"></i>
+                </button>
+              </div>
+              <img src="assets/images/facial_spa.png" alt="Facial Spa">
+            </div>
+
+            <div class="promo-card-2">
+              <span class="tag">Special Offer</span>
+              <h3>Flat 20% Off<br>On First Visit</h3>
+              <p>Because selfcare is not a luxury, it's a necessity.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Real Transformations Section -->
+      <div class="transformations-section">
+        <div class="container">
+          <div class="transformations-header">
+            <div>
+              <span class="section-tag">CLIENT STORIES</span>
+              <h2 class="section-title">Real People. Real Transformations.</h2>
+            </div>
+            <div class="carousel-nav">
+              <button class="carousel-btn" id="prev-trans"><i data-feather="arrow-left"></i></button>
+              <button class="carousel-btn" id="next-trans"><i data-feather="arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div style="overflow: hidden;">
+            <div class="transformations-track" id="trans-track">
+              
+              <div class="transformation-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" class="transformation-img" alt="Priya">
+                <div class="transformation-body">
+                  <h4 class="transformation-name">Priya S.</h4>
+                  <p class="transformation-service">Hair Balayage & Cut</p>
+                  <p class="transformation-quote">"The team at Glammé completely brought my hair back to life. Super classy ambience!"</p>
+                </div>
+              </div>
+
+              <div class="transformation-card">
+                <img src="assets/images/bridal_makeup.png" class="transformation-img" alt="Aishwarya">
+                <div class="transformation-body">
+                  <h4 class="transformation-name">Aishwarya M.</h4>
+                  <p class="transformation-service">Bridal Makeover Package</p>
+                  <p class="transformation-quote">"My wedding makeup was pure perfection! Received endless compliments."</p>
+                </div>
+              </div>
+
+              <div class="transformation-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" class="transformation-img" alt="Kavya">
+                <div class="transformation-body">
+                  <h4 class="transformation-name">Kavya R.</h4>
+                  <p class="transformation-service">Hydra Facial Treatment</p>
+                  <p class="transformation-quote">"My skin glows for weeks after every session. Highly recommend!"</p>
+                </div>
+              </div>
+
+              <div class="transformation-card">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" class="transformation-img" alt="Sneha">
+                <div class="transformation-body">
+                  <h4 class="transformation-name">Sneha K.</h4>
+                  <p class="transformation-service">Gel Nail Extensions</p>
+                  <p class="transformation-quote">"The precision and art detail on my nails is unbeatable."</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PAGE VIEW 2: SERVICES DETAILED -->
+    <section id="page-services" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>Our Services</h1>
+          <p>Expert care. Premium products. A more glamorous you.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 40px;">
+        <div class="filter-tabs" id="service-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hair">Hair</button>
+          <button class="filter-btn" data-filter="skin">Skin</button>
+          <button class="filter-btn" data-filter="makeup">Makeup</button>
+          <button class="filter-btn" data-filter="nails">Nails</button>
+          <button class="filter-btn" data-filter="spa">Spa</button>
+          <button class="filter-btn" data-filter="bridal">Bridal</button>
+        </div>
+
+        <div class="detailed-services-grid" id="services-grid-container">
+          <div class="detailed-card" data-category="hair">
+            <div class="detailed-card-img">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Hair Cut">
+              <span class="price-tag">₹699</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Hair Cut & Styling</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 45 Mins</span> • <span>Styling included</span></div>
+              <p class="detailed-card-desc">Customized hair trim, layer cut, blow-dry finish and scalp massage.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Hair Cut & Styling">Book Session</button>
+            </div>
+          </div>
+
+          <div class="detailed-card" data-category="hair">
+            <div class="detailed-card-img">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Hair Color">
+              <span class="price-tag">₹1,499</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Hair Coloring</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 90 Mins</span> • <span>Ammonia-free</span></div>
+              <p class="detailed-card-desc">Global hair coloring, ombre, or highlights with premium gloss finish.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Hair Coloring">Book Session</button>
+            </div>
+          </div>
+
+          <div class="detailed-card" data-category="skin">
+            <div class="detailed-card-img">
+              <img src="assets/images/facial_spa.png" alt="Facial">
+              <span class="price-tag">₹1,199</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Facial Treatment</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 60 Mins</span> • <span>Deep cleansing</span></div>
+              <p class="detailed-card-desc">Deep pore cleansing, steam extraction, collagen mask and glow massage.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Facial Treatment">Book Session</button>
+            </div>
+          </div>
+
+          <div class="detailed-card" data-category="bridal">
+            <div class="detailed-card-img">
+              <img src="assets/images/bridal_makeup.png" alt="Bridal">
+              <span class="price-tag">₹8,999</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Bridal Makeover</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 180 Mins</span> • <span>HD / Airbrush</span></div>
+              <p class="detailed-card-desc">Complete royal bridal makeover including hair styling, draping, and makeup.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Bridal Makeover">Book Session</button>
+            </div>
+          </div>
+
+          <div class="detailed-card" data-category="nails">
+            <div class="detailed-card-img">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Nail Art">
+              <span class="price-tag">₹799</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Nail Art & Extension</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 60 Mins</span> • <span>Custom designs</span></div>
+              <p class="detailed-card-desc">Gel nail extensions, custom aesthetic nail art, and cuticle care spa.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Nail Art & Extension">Book Session</button>
+            </div>
+          </div>
+
+          <div class="detailed-card" data-category="spa">
+            <div class="detailed-card-img">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Full Body Spa">
+              <span class="price-tag">₹2,199</span>
+            </div>
+            <div class="detailed-card-body">
+              <h3 class="detailed-card-title">Full Body Spa</h3>
+              <div class="detailed-card-meta"><span><i data-feather="clock"></i> 90 Mins</span> • <span>Aromatherapy</span></div>
+              <p class="detailed-card-desc">Soothing Swedish or Aromatherapy massage with essential organic oils.</p>
+              <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking" data-service="Full Body Spa">Book Session</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 3: ABOUT US -->
+    <section id="page-about" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>About Glammé</h1>
+          <p>Where Beauty Meets Confidence</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 80px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+          <div>
+            <span class="section-tag">OUR MISSION & VISION</span>
+            <h2 class="section-title" style="color: #ffffff; margin-bottom: 20px;">Dedicated to your beauty & happiness</h2>
+            <p style="color: var(--clr-text-sub); font-size: 1.05rem; margin-bottom: 20px;">
+              At Glammé, we believe beauty is more than just appearance—it's a feeling. Our expert team is dedicated to bringing out the best in you with personalized care, premium products, and a relaxing experience.
+            </p>
+            <p style="color: var(--clr-text-sub); font-size: 1rem;">
+              Founded with a vision to redefine salon experiences in Mangalore, we combine modern international styling techniques with warm hospitality.
+            </p>
+          </div>
+          <div>
+            <img src="assets/images/hero_model.png" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-dark);" alt="About Glammé">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 4: BOOKING WIZARD -->
+    <section id="page-booking" class="page-view">
+      <div class="booking-section">
+        <div class="container">
+          
+          <div style="text-align: center; margin-bottom: 40px;">
+            <h1 class="section-title">Book Appointment</h1>
+            <p class="section-subtitle" style="margin: 0 auto;">Your beauty journey begins here.</p>
+          </div>
+
+          <div class="booking-wizard">
+            <div class="wizard-steps">
+              <div class="wizard-step active" id="step-tab-1">
+                <div class="step-num">1</div>
+                <span class="step-label">Service</span>
+              </div>
+              <div class="wizard-step" id="step-tab-2">
+                <div class="step-num">2</div>
+                <span class="step-label">Date & Time</span>
+              </div>
+              <div class="wizard-step" id="step-tab-3">
+                <div class="step-num">3</div>
+                <span class="step-label">Details</span>
+              </div>
+              <div class="wizard-step" id="step-tab-4">
+                <div class="step-num">4</div>
+                <span class="step-label">Confirm</span>
+              </div>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="wizard-step-content active" id="step-content-1">
+              <h3 style="margin-bottom: 20px; font-size: 1.4rem;">Select Service Category</h3>
+              <div class="service-select-grid">
+                <div class="service-select-card selected" data-service="Hair Care & Styling">
+                  <i data-feather="scissors"></i>
+                  <h4>Hair</h4>
+                </div>
+                <div class="service-select-card" data-service="Skin Care & Facial">
+                  <i data-feather="sun"></i>
+                  <h4>Skin</h4>
+                </div>
+                <div class="service-select-card" data-service="Makeup & Styling">
+                  <i data-feather="smile"></i>
+                  <h4>Makeup</h4>
+                </div>
+                <div class="service-select-card" data-service="Nail Art & Spa">
+                  <i data-feather="heart"></i>
+                  <h4>Nails</h4>
+                </div>
+                <div class="service-select-card" data-service="Full Body Spa">
+                  <i data-feather="feather"></i>
+                  <h4>Spa</h4>
+                </div>
+                <div class="service-select-card" data-service="Bridal Makeover">
+                  <i data-feather="crown"></i>
+                  <h4>Bridal</h4>
+                </div>
+                <div class="service-select-card" data-service="Beauty Consultation">
+                  <i data-feather="user"></i>
+                  <h4>Consultation</h4>
+                </div>
+                <div class="service-select-card" data-service="Custom Package">
+                  <i data-feather="grid"></i>
+                  <h4>Others</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="wizard-step-content" id="step-content-2">
+              <h3 style="margin-bottom: 20px; font-size: 1.4rem;">Select Date & Time</h3>
+              <div class="date-time-grid">
+                <div class="calendar-box">
+                  <div class="calendar-header">
+                    <button id="cal-prev"><i data-feather="chevron-left"></i></button>
+                    <span id="cal-month-year">September 2026</span>
+                    <button id="cal-next"><i data-feather="chevron-right"></i></button>
+                  </div>
+                  <div class="calendar-days" id="calendar-days-grid"></div>
+                </div>
+
+                <div>
+                  <h4 style="margin-bottom: 12px; font-size: 1rem;">Select Time Slot</h4>
+                  <div class="time-slots-grid">
+                    <div class="time-slot selected">10:00 AM</div>
+                    <div class="time-slot">11:30 AM</div>
+                    <div class="time-slot">01:00 PM</div>
+                    <div class="time-slot">02:30 PM</div>
+                    <div class="time-slot">04:00 PM</div>
+                    <div class="time-slot">06:00 PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="wizard-step-content" id="step-content-3">
+              <h3 style="margin-bottom: 20px; font-size: 1.4rem;">Your Information</h3>
+              <form id="booking-form">
+                <div class="form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-input" id="book-name" placeholder="Enter your full name" required>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                  <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-input" id="book-phone" placeholder="+91 98765 43210" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" id="book-email" placeholder="name@example.com" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Preferred Stylist (Optional)</label>
+                  <select class="form-select" id="book-stylist">
+                    <option value="Any Available Expert">Any Available Expert</option>
+                    <option value="Ananya - Senior Stylist">Ananya (Senior Hair Stylist)</option>
+                    <option value="Ritika - Bridal Specialist">Ritika (Bridal Specialist)</option>
+                    <option value="Sneha - Skincare Expert">Sneha (Skincare Expert)</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="wizard-step-content" id="step-content-4">
+              <div style="text-align: center; padding: 20px 0;">
+                <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--clr-pink-gradient); color: var(--clr-text-dark); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
+                  <i data-feather="check" style="width: 32px; height: 32px;"></i>
+                </div>
+                <h3 style="font-size: 2rem; color: #1b0e10;">Appointment Confirmed!</h3>
+                <p style="color: #7a6c70; margin-bottom: 24px;">Your booking request has been successfully scheduled.</p>
+                
+                <div style="background: #ffffff; border-radius: var(--radius-md); padding: 24px; border: 1px dashed #f2c7d1; text-align: left; max-width: 480px; margin: 0 auto 24px auto;">
+                  <p><strong>Booking Ref:</strong> <span id="summary-ref">GLAM-8492</span></p>
+                  <p><strong>Service:</strong> <span id="summary-service">Hair Care & Styling</span></p>
+                  <p><strong>Date & Time:</strong> <span id="summary-datetime">15 Sep 2026 at 10:00 AM</span></p>
+                  <p><strong>Client:</strong> <span id="summary-client">Guest User</span></p>
+                  <p><strong>Location:</strong> MG Road, Mangalore, KA</p>
+                </div>
+
+                <button class="btn-pill" onclick="window.print()"><i data-feather="printer"></i> Print Receipt</button>
+              </div>
+            </div>
+
+            <!-- Wizard Footer -->
+            <div class="wizard-footer">
+              <button class="btn-pill" id="wizard-prev-btn" style="background: transparent; border: 1.5px solid #d87b90; color: #1b0e10; box-shadow: none; display: none;">Back</button>
+              <button class="btn-pill" id="wizard-next-btn" style="margin-left: auto;">Next →</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 5: GALLERY -->
+    <section id="page-gallery" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>Our Gallery</h1>
+          <p>A glimpse of our work, our clients, our passion.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 60px 0;">
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+          <div class="service-card"><img src="assets/images/hero_model.png" style="height: 280px; object-fit: cover;" alt="G1"></div>
+          <div class="service-card"><img src="assets/images/bridal_makeup.png" style="height: 280px; object-fit: cover;" alt="G2"></div>
+          <div class="service-card"><img src="assets/images/facial_spa.png" style="height: 280px; object-fit: cover;" alt="G3"></div>
+          <div class="service-card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" style="height: 280px; object-fit: cover;" alt="G4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 6: PACKAGES -->
+    <section id="page-packages" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>Our Packages</h1>
+          <p>Beautiful services, thoughtfully curated.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 60px 0;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+          
+          <div style="background: #ffffff; color: #1b0e10; padding: 40px 30px; border-radius: var(--radius-lg); border: 1px solid #f2c7d1;">
+            <h3>Basic Hair Care</h3>
+            <p style="font-size: 0.85rem; color: #7a6c70;">Hair cut + wash + styling</p>
+            <div style="font-size: 3rem; font-family: var(--font-serif); margin: 16px 0;">₹699</div>
+            <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking">Book Now</button>
+          </div>
+
+          <div style="background: #ffffff; color: #1b0e10; padding: 40px 30px; border-radius: var(--radius-lg); border: 2px solid var(--clr-pink-primary); box-shadow: var(--shadow-pink);">
+            <span style="background: var(--clr-pink-gradient); padding: 4px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Most Popular</span>
+            <h3 style="margin-top: 10px;">Advanced Hair Care</h3>
+            <p style="font-size: 0.85rem; color: #7a6c70;">Hair spa + cut + styling</p>
+            <div style="font-size: 3rem; font-family: var(--font-serif); margin: 16px 0;">₹1,499</div>
+            <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking">Book Now</button>
+          </div>
+
+          <div style="background: #ffffff; color: #1b0e10; padding: 40px 30px; border-radius: var(--radius-lg); border: 1px solid #f2c7d1;">
+            <h3>Premium Hair Makeover</h3>
+            <p style="font-size: 0.85rem; color: #7a6c70;">Coloring + spa + styling</p>
+            <div style="font-size: 3rem; font-family: var(--font-serif); margin: 16px 0;">₹2,499</div>
+            <button class="btn-pill" style="width: 100%; justify-content: center;" data-view="booking">Book Now</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 7: BLOG -->
+    <section id="page-blog" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>Beauty Tips & Blog</h1>
+          <p>Insights, Tips, Trends. All Things Beauty.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 60px 0;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+          <div style="background: #ffffff; color: #1b0e10; border-radius: var(--radius-md); overflow: hidden; border: 1px solid #f4dbe1;">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" style="height: 200px; width: 100%; object-fit: cover;" alt="B1">
+            <div style="padding: 20px;">
+              <h3 style="font-family: var(--font-serif);">5 Hair Care Tips for Healthy Hair</h3>
+              <p style="font-size: 0.85rem; color: #6e6064; margin-top: 8px;">Essential routines to maintain hair glow.</p>
+            </div>
+          </div>
+
+          <div style="background: #ffffff; color: #1b0e10; border-radius: var(--radius-md); overflow: hidden; border: 1px solid #f4dbe1;">
+            <img src="assets/images/facial_spa.png" style="height: 200px; width: 100%; object-fit: cover;" alt="B2">
+            <div style="padding: 20px;">
+              <h3 style="font-family: var(--font-serif);">Skincare Routine for Glowing Skin</h3>
+              <p style="font-size: 0.85rem; color: #6e6064; margin-top: 8px;">Dermatological tips for glowing complexion.</p>
+            </div>
+          </div>
+
+          <div style="background: #ffffff; color: #1b0e10; border-radius: var(--radius-md); overflow: hidden; border: 1px solid #f4dbe1;">
+            <img src="assets/images/bridal_makeup.png" style="height: 200px; width: 100%; object-fit: cover;" alt="B3">
+            <div style="padding: 20px;">
+              <h3 style="font-family: var(--font-serif);">Bridal Makeup Trends 2026</h3>
+              <p style="font-size: 0.85rem; color: #6e6064; margin-top: 8px;">Modern bridal trends for your special day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE VIEW 8: CONTACT -->
+    <section id="page-contact" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p>We'd love to hear from you.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 60px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 24px; color: #ffffff;">Send Us a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" style="color: var(--clr-text-white);">Your Name</label>
+                <input type="text" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" style="color: var(--clr-text-white);">Your Email</label>
+                <input type="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" style="color: var(--clr-text-white);">Message</label>
+                <textarea class="form-textarea" rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button class="btn-pill" type="submit">Send Message <i data-feather="send"></i></button>
+            </form>
+          </div>
+
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 24px; color: #ffffff;">Salon Location</h3>
+            <div style="border-radius: var(--radius-lg); overflow: hidden; height: 400px; border: 1px solid var(--clr-border);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.544719280362!2d74.842774!3d12.87114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4d3a2a6b2b%3A0x7d6a5e4c3b2a1!2sMG%20Road%2C%20Mangalore!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.5 8.4C8 18 10 16 12 16s4 2 5.5 4.4c2.7-1.8 4.5-4.9 4.5-8.4 0-5.5-4.5-10-10-10z"></path>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name">Glammé</span>
+              <span class="brand-sub">BEAUTY SALON & SPA</span>
+            </div>
+          </a>
+          <p>Expert care. Premium products. A more glamorous you. Mangalore's premier beauty destination.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-view="home">Home</a></li>
+            <li><a href="#about" data-view="about">About</a></li>
+            <li><a href="#services" data-view="services">Services</a></li>
+            <li><a href="#gallery" data-view="gallery">Gallery</a></li>
+            <li><a href="#contact" data-view="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-view="services">Hair Care</a></li>
+            <li><a href="#services" data-view="services">Skin Care</a></li>
+            <li><a href="#services" data-view="services">Bridal Makeover</a></li>
+            <li><a href="#services" data-view="services">Nail Art</a></li>
+            <li><a href="#services" data-view="services">Spa & Wellness</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Join Our Beauty Circle</h4>
+          <p style="font-size: 0.85rem; color: var(--clr-text-sub);">Get updates, offers & beauty tips straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email" required>
+            <button class="btn-pill" type="submit" style="padding: 8px 16px;"><i data-feather="send"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Glammé Beauty Salon & Spa. All rights reserved.</p>
+        <p>Designed with <i data-feather="heart" style="width: 14px; height: 14px; fill: var(--clr-pink-primary); stroke: none;"></i> for a more beautiful you.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO STORY MODAL -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-container" style="max-width: 800px; padding: 0; background: #000; overflow: hidden;">
+      <button class="modal-close" id="close-video-modal">&times;</button>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Glammé Story Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/app.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>

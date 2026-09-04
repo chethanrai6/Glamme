@@ -1,0 +1,101 @@
+/* Glammé Beauty Salon & Spa - Keyframe Animations & Micro-Interactions */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(232, 165, 180, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(232, 165, 180, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(232, 165, 180, 0);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover Shimmer & Glass Glow Effects */
+.glass-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 100%
+  );
+  transform: rotate(30deg);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+}
+
+.glass-glow:hover::before {
+  transform: rotate(30deg) translate(30%, 30%);
+}
+
+.pulse-badge {
+  animation: pulseGlow 2s infinite;
+}
+
+.float-item {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Reveal on Scroll Observer Utility */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
