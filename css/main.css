@@ -83,33 +83,57 @@ button {
   box-sizing: border-box;
 }
 
-/* TOP ANNOUNCEMENT BAR */
+/* TOP ANNOUNCEMENT BAR (SINGLE-LINE MARQUEE TICKER) */
 .top-bar {
   background-color: #130a0b;
   color: var(--clr-pink-soft);
-  font-size: 0.8rem;
+  font-size: 0.775rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.top-bar .container {
+.top-bar-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+}
+
+.top-bar-marquee-track {
+  display: inline-flex;
   align-items: center;
-}
-
-.top-bar-info {
-  display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  white-space: nowrap;
+  animation: marqueeScroll 22s linear infinite;
+  will-change: transform;
 }
 
-.top-bar-info span {
+.top-bar-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.top-bar-marquee-track span {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  white-space: nowrap;
+}
+
+.top-bar-marquee-track .dot {
+  color: var(--clr-pink-primary);
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* SITE HEADER NAVBAR */
@@ -1233,16 +1257,10 @@ button {
     padding: 0 16px;
   }
 
-  /* Top Bar Mobile Fix */
-  .top-bar-info {
-    justify-content: center;
-    gap: 12px;
+  /* Top Bar Mobile Marquee Fix */
+  .top-bar {
+    padding: 6px 0;
     font-size: 0.75rem;
-    width: 100%;
-  }
-
-  .top-bar-social {
-    display: none;
   }
 
   /* Header Navigation Drawer Mobile Fix */
