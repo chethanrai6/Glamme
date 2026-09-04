@@ -1394,12 +1394,36 @@ button {
 
   /* Transformations Carousel Mobile Fix */
   .transformations-section {
-    padding: 60px 0;
+    padding: 50px 0;
+  }
+
+  .transformations-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .transformations-track {
+    gap: 16px;
   }
 
   .transformation-card {
-    min-width: 85%;
+    min-width: 100%;
+    max-width: 100%;
     flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .transformation-body {
+    padding: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .transformation-quote {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Detailed Views Mobile Fix */
@@ -1435,8 +1459,18 @@ button {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .hero-main-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .hero-subhead {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
   }
 
   .hero-features-bar {
@@ -1444,7 +1478,14 @@ button {
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.85rem;
+    line-height: 1.15;
+    word-wrap: break-word;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.4;
   }
 
   .wizard-steps .step-label {
@@ -1454,6 +1495,27 @@ button {
   .step-num {
     width: 32px;
     height: 32px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Ultra-Narrow Viewport Support (e.g. 288px - 340px) */
+@media (max-width: 340px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.15;
+  }
+
+  .hero-main-title {
+    font-size: 1.95rem;
+  }
+
+  .btn-pill {
+    padding: 8px 16px;
     font-size: 0.8rem;
   }
 }
